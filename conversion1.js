@@ -38,7 +38,7 @@ console.log(2%3)
 
 console.log(true)
 
-let gamecounter=""
+let gamecounter=null
 //gamecounter++
 console.log("value is "+gamecounter)
-
+console.log(typeof gamecounter)
