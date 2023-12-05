@@ -41,6 +41,7 @@
 
 const coding=["js","ruby","java","python"]
 
+
 // coding.forEach( function (item){
 //     console.log(item);
 // })
@@ -85,3 +86,8 @@ for (const itm of mycoding) {
 for (const key in mycoding) {
    console.log("I am a coder ",mycoding[key].languageName);
 }
+
+function square(item){
+    return item*item
+}
+
