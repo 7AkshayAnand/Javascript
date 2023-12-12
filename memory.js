@@ -1,22 +1,23 @@
 //Stack: All primitive type data are stored here
 //Heap:All non primitive type data are sotred here
 
-let myYoutubeName="hiteshchoudharydotcom";
+// let myYoutubeName="hiteshchoudharydotcom";
 
-let anothername=myYoutubeName;
-anothername="chaiiaurcode"
+// let anothername=myYoutubeName;
+// anothername="chaiiaurcode"
 
-console.log(myYoutubeName);
-console.log(anothername);
+// console.log(myYoutubeName);
+// console.log(anothername);
 
-let userOne={
-    email:"user@google.com",
-    upi:"user@123"
+// let userOne={
+//     email:"user@google.com",
+//     upi:"user@123"
 
-}
+// }
 
-let userTwo=userOne
+// let userTwo=userOne
 
-userTwo.email="Akshay@gmail.com"
-console.log(userOne.email);
-console.log(userTwo.email)
+// userTwo.email="Akshay@gmail.com"
+// console.log(userOne.email);
+// console.log(userTwo.email)
+

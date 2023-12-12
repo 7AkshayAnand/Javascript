@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(langName){
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        
+       const val= document.querySelector('.language')
+       val.appendChild(li)
+        
+    }
+    addLanguage("Java")
+    addLanguage("English")
+    //Editing the existing element 
+    const secondlang=document.querySelector("li:nth-child(2)")
+    //first way of direct replacing the existing content
+    secondlang.innerHTML="C++"
+    //more optimized way of creating and replacing the element 
+    
+    const newli=document.createElement('li')
+    //we can also use innerHTML here in place of textContent
+    newli.textContent="AKshay"
+    secondlang.replaceWith(newli)
+
+    //edit : replace javascript with typescript
+    const jsref=document.querySelector("li:nth-child(1)")
+   // jsref.innerHTML="typescript"
+    //other way is use outerHTML
+    jsref.outerHTML="<li>NEW way TYpescript</li>"
+
+    //removing : deleting the last element 
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove()
+
+
+
+</script>
+</html>
