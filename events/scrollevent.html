@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+         body{
+            height: 2000px;
+         }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Hello</h1>
+  
+      <script>
+
+        // window.addEventListener('scroll',function(){
+        //     console.log('scrolling ');
+        // })
+
+        window.addEventListener("scroll",function(e){
+            
+                if(window.pageYOffset>150){
+                    document.body.style.background="red"
+                }else{
+                    document.body.style.background="white"
+                }
+
+            console.log('scrolling');
+        });
+      </script>
+</body>
+</html>

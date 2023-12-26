@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+      <input type="text" id="myinput" value="kkkkk">
+
+    </form>
+</body>
+
+  <script>
+
+
+
+  
+     let inp=document.getElementById('myinput')
+    
+    //   inp.addEventListener('change',function(){
+    //     console.log('hii',inp.value);
+    //   })
+
+
+    inp.addEventListener('input',function(){
+        console.log('hii',inp.textContent);
+        myfun()
+      })
+
+      function myfun(){
+        console.log('myfun called wiht ',inp.innerHTML);
+      }
+
+
+     //when user clicks inside of input box then below will execute
+    //  inp.addEventListener('focus',myfoc)
+     //when user clicks out of the input box then below will executed 
+    //  inp.addEventListener('blur',myblur)
+
+    //  function myfoc(){
+    //       inp.style.background="yellow";
+    //  }
+
+    //  function myblur(){
+    //     inp.style.background="red";
+    //  }
+
+  </script>
+</html>

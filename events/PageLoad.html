@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Physics_wallah_logo.jpg" alt="donw">
+    <script>
+        //it is loaded  when page is just opened in browser window and DOM tree is created but till no any other things is not loaded like css or any image
+        window.addEventListener('DOMContentLoaded',function(){
+            console.log('dom tree created');
+        })
+   
+         let img=document.getElementById('img1')
+       //it will execute when everything is loaded like css and all images or any other things
+         img.addEventListener('load',function(){
+            console.log('fully loaded');
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn1">Google </button>
+  <button id="btn2">close </button>
+  <script>
+    let url = "https://www.google.com"
+    let features = "height=500,width=500"
+    let win;
+    let btn1 = document.getElementById('btn1')
+    btn1.addEventListener('click', function () {
+      // open(url,name,features)
+      win = window.open(url, 'google', features);
+      console.log(win);
+    });
+
+
+
+    let btn2 = document.getElementById('btn2')
+    btn2.addEventListener('click', function () {
+      win.close('hlo kya haal');
+    });
+  </script>
+</body>
+
+</html>

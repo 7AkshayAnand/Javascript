@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+  
+        body{
+            background-color: skyblue;
+        }
+
+        #container{
+            background-color: orange;
+            height: 500px;
+            width: 500px;
+            margin: 120px;
+            
+        }
+
+        #btn{
+            margin: 120px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+      
+           <button id="btn">Clicke Me</button>
+
+    </div>
+
+    <script>
+    
+       let d=document.getElementById('container');
+       let b=document.getElementById('btn')
+
+       b.addEventListener('click',btnclicked,true)
+       d.addEventListener('click',divclicked);
+
+       document.body.addEventListener('click',bodyclicked,true);
+
+       function btnclicked(){
+        console.log('btn clicked');
+       }
+
+       function divclicked(){
+        console.log('div clicked');
+       }
+
+       function bodyclicked(){
+        console.log('body clicked');
+       }
+
+    </script>
+</body>
+</html>

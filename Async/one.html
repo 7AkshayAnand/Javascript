@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chaii aur code</h1>
+    <button id="stop">Stop</button>
+    <script>
+       
+       function myname(){
+        console.log('AKshay anand');
+       }
+       setTimeout(myname,5000)
+        
+     
+
+        const fn= function(){
+            document.querySelector('h1').innerHTML="Best js series"
+         }
+        const ref= setTimeout(fn,5000)
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearTimeout(ref)
+            console.log('Stopped');
+        })
+        
+    </script>
+</body>
+</html>
