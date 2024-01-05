@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">green</button>
+    <script>
+        // function outer(){
+        //     let username="Akshay"
+        //     function inner(){
+        //         console.log('inner ',username);
+        //     }
+        //     inner()
+        // }
+        // outer()
+        // console.log('TOO outer ',username);
+
+//Below not only displaname will get returned also its  lixcal scope will get returned : Closure
+        // function makefunc(){
+        //     const name="AKshay";
+        //     function displayname(){
+        //         console.log(name);
+        //     }
+        //     return displayname
+        // }
+        // const myfunc=makefunc()
+        // myfunc()
+
+
+
+        // document.getElementById('orange').onclick=function(){
+        //     document.body.style.backgroundColor='orange'
+        // }
+        // document.getElementById('green').onclick=function(){
+        //     document.body.style.backgroundColor='green'
+        // }
+
+         //real life example of Closure
+        function clickhandler(color){
+           
+            return  function(){
+                document.body.style.backgroundColor=color
+            }
+        }
+        document.getElementById('orange').onclick=clickhandler('orange')
+        document.getElementById('green').onclick=clickhandler('green')
+    </script>
+</body>
+</html>
+//static,getterandsetter,closure
